@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/cce47b7105.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    ::-webkit-scrollbar {
+        width: 6px
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #e8e8e8
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #fb5496
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-image: -webkit-linear-gradient(45deg, #ffbd84, #ff1f8e);
+        background-image: -o-linear-gradient(45deg, #ffbd84, #ff1f8e);
+        background-image: linear-gradient(45deg, #ffbd84, #ff1f8e)
+    }
+
+    ::-moz-selection {
+        background: rgba(166, 175, 189, .3)
+    }
+
+    ::selection {
+        background: rgba(166, 175, 189, .3)
+    }
+    .no-scrollbar::-webkit-scrollbar{
+        display: none;
+        background-color: transparent;
+        scroll-behavior: smooth;
+        scroll-padding: 0;
+        scroll-margin: 0;
+        scrollbar-width: none;
+
+    }
+
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-os-font-smoothing: grayscale;
+        box-sizing: border-box;
+        outline: 0;
+        vertical-align: baseline
+    }
+
+    ul {
+        list-style: none
+    }
+
+    a:hover {
+        text-decoration: none
+    }
+
+    button:focus {
+        outline: 0 !important
+    }
+
+    .sparkle1 {
+        animation: sparkle 5s infinite;
+        animation-delay: 2s,500ms;
+    }
+
+    .sparkle {
+        animation: sparkle 5s infinite;
+    }
+
+    @keyframes sparkle {
+        0%, 100% {
+            transform: scale(1);
+            opacity: 1;
+            background-color: #3b82f6;
+            box-shadow: 0 0 15px rgba(59, 130, 246,);
+        }
+
+        25% {
+            transform: scale(0.75);
+            opacity: 0.6;
+            background-color: #3b82f6;
+            box-shadow: 0 0 15px rgba(59, 130, 246,0.75);
+        }
+
+        50% {
+            transform: scale(0);
+        }
+
+        75% {
+            transform: scale(0.75);
+            opacity: 0.6;
+            background-color: #3b82f6;
+            box-shadow: 0 0 15px rgba(59, 130, 246,0.75);
+        }
+    }
+
+
+    .bounce {
+        animation: bounce 4s infinite ease-in-out;
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        50% {
+            transform: translate(0, -10px);
+        }
+
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+    .bounce1 {
+        animation: bounce1 4s infinite ease-in-out;
+        animation-delay: 2s;
+    }
+
+    @keyframes bounce1 {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        50% {
+            transform: translate(0, -10px);
+        }
+
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: Poppins, sans-serif;
+        /* color: #050748; */
+        font-weight: 600
+    }
+
+    ul {
+        list-style: none
+    }
+
+    a:hover {
+        text-decoration: none
+    }
+
+    button:focus {
+        outline: 0 !important
+    }
+
+    .gradient-text {
+        background: linear-gradient(150deg, #1e3a8a 0%, #0ea5e9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .bg-linear-primaryLight-secondary {
+        background: linear-gradient(to right, #3b82f6, #0ea5e9);
+    }
+    .font-poppins {
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+<body class="bg-gray-50 ">
+    <div class="relative p-0 m-0 font-poppins overflow-hidden ">
+        <!-- bg colors -->
+        <div class="absolute -top-24 md:-top-10 xl:top-0 right-0 w-[50%] xl:w-[60%] h-full md:h-full xl:h-[150%] rounded-s-full md:rounded-s-full xl:rounded-s-full bg-gradient-to-r from-[#1e3a8b] to-[#0ea5e9] opacity-5 md:opacity-10 -z-9">
+        </div>
+
+        <div class="absolute inset-0 bg-gradient-to-r from-[#1e3a8b] to-[#0ea5e9] opacity-18 blur-3xl -z-11 pb-32">
+        </div>
+
+        <div class="relative text-center max-w-3xl mx-auto mb-20 mt-10">
+            <!-- contents -->
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text md:font-extrabold tracking-tight mx-8 text-shadow-sm ">About Us<span class="gradient-text">-Platinum Finance</span>
+            </h2>
+            <p class="text-gray-600 text-lg md:text-xl xl:text-2xl mx-8 text-shadow-xs text-shadow-white/50">
+                Your Trusted Partner in Financial Growth
+            </p>
+            <div class="w-32 h-1 bg-linear-primaryLight-secondary mx-auto mt-5 rounded-full"></div>
+            <p class="text-gray-500 text-base mt-4 mx-8 text-justify text-shadow-2xs">
+                At Platinum Finance, we are committed to empowering individuals and businesses with the financial tools
+                they need to succeed. Our team of experts is dedicated to providing personalized solutions that cater to
+                your unique financial needs.
+            </p>
+        </div>
+
+        <!-- breaf about about-us section -->
+        <div class="mx-8 pb-32 xl:mx-16">
+            <!-- About-us btn -->
+            <span class="inline-block relative bg-[#1e3a8b] py-3 px-6 rounded-3xl font-medium text-white text-lg shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300 ease-in-out text-shadow-xs text-shadow-white-50">
+                <span class="inline-block w-3 aspect-square bg-white rounded-full"></span>
+                About-us
+                <span class="inline-block w-3 aspect-square bg-white rounded-full"></span>
+            </span>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-8">
+                <!-- who we are? -->
+                <div class="flex items-center gap-6 bg-white rounded-2xl p-6 shadow-xl border border-gray-200 hover:shadow-2xl hover:-translate-y-1 hover:scale-101 transition duration-300 ease-in-out max-w-sm">
+                    <img src="whoweare.jpeg" alt="" class="w-15 aspect-square rounded-full shadow-lg">
+                    <div>
+                        <h2 class="mb-3 text-lg">💼 Who We Are</h2>
+                        <p class="text-justify">We are a team of finance experts, risk analysts, and customer service
+                            professionals passionate about helping individuals and businesses grow with confidence.</p>
+                    </div>
+                </div>
+
+                <!-- vision -->
+                <div
+                    class="flex items-center gap-6 bg-white rounded-2xl p-6 shadow-xl border border-gray-200 hover:shadow-2xl hover:-translate-y-1 hover:scale-101 transition duration-300 ease-in-out max-w-sm">
+                    <img src="vision.jpg" alt="" class="w-15 aspect-square rounded-full shadow-lg">
+                    <div>
+                        <h2 class="mb-3 text-lg">📍 Our Vision</h2>
+                        <p class="text-justify">To become India’s most customer-friendly and reliable financial services
+                            provider by embracing technology, personalization, and trust.</p>
+                    </div>
+                </div>
+
+                <!-- mission -->
+                <div
+                    class="flex items-center gap-6 bg-white rounded-2xl p-6 shadow-xl border border-gray-200 hover:shadow-2xl hover:-translate-y-1 hover:scale-101 transition duration-300 ease-in-out max-w-sm">
+                    <img src="mission.png" alt="" class="w-15 aspect-square rounded-full shadow-lg">
+                    <div>
+                        <h2 class="mb-3 text-lg">🤝 Our Mission</h2>
+                        <p class="text-justify">To make finance simple, honest, and accessible — helping people live
+                            better, achieve more, and feel financially confident.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- What we offers -->
+    <div class="relative overflow-hidden flex py-32 xl:py-32 bg-[#f8fafc]">
+        <div class="max-w-7xl mx-8 xl:px-16 ">
+            <h2 class="text-4xl text-[#1e3a8a] mb-10">🔍 What We Offers</h2>
+            <ul class="text-gray-700 text-lg space-y-4">
+                <li class=" hover:scale-101 transition ease-in-out ">✅ <b>Personal & Business Loans</b> – with flexible EMIs and fast approvals</li>
+                <li class="my-5 hover:scale-101 transition ease-in-out ">✅ <b>Credit Cards</b> – for lifestyle, travel, rewards, and more</li>
+                <li class=" hover:scale-101 transition ease-in-out ">✅ <b>Insurance Policies</b> – health, life, vehicle, and term insurance coverage</li>
+                <li class="my-5 hover:scale-101 transition ease-in-out ">✅ <b>Credit Score Assistance</b> – expert guidance to build and repair credit</li>
+                <li class=" hover:scale-101 transition ease-in-out ">✅ <b>Custom Financial Planning</b> – get a personal advisor for major decisions</li>
+            </ul>
+        </div>
+        <img src="whatweoffers.png" alt="" class="hidden lg:block w-1/3 h-full object-cover opacity-50 drop-shadow-xl">
+    </div> 
+    
+    <!-- Team Section -->
+    <div class="relative bg-white overflow-hidden">
+        <div class="absolute -top-[200px] -right-[200px] w-[800px] h-[800px] xl:w-[70%] rounded-full bg-gradient-to-r from-[#1e3a8b] to-[#0ea5e9] opacity-5 z-1"></div>
+
+        <div class="absolute top-1/6 md:top-0/6 xl:top-0 bg-[#1e3a8a] opacity-30 md:opacity-25 xl:opacity-20 blur-3xl w-[40%] xl:w-[30%] aspect-square z-10"></div>
+        <div class="absolute top-3/6 md:top-2/6 right-0 md:right-1/4 xl:right-2/4 bg-[#0ea5e9] opacity-25 md:opacity-10 blur-3xl w-[40%] xl:w-[20%] aspect-square z-10"></div>
+        <div class="absolute top-4/6 xl:top-5/6 left-0 bg-[#0ea5e9] opacity-25 md:opacity-15 blur-3xl xl:blur-lg w-[40%] sm:w-0 md:w-[40%] xl:w-[20%] rounded-full aspect-square z-10"></div>
+        <div class="absolute top-5/6 right-0 bg-[#1e3a8a] opacity-25 blur-3xl w-[40%] aspect-square z-10"></div>
+
+        <div class="relative mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3 py-32">
+            <div class="max-w-xl">
+                <h2 class="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">Meet our
+                    leadership</h2>
+                <p class="mt-6 text-lg/8 text-gray-600 text-justify">We’re a dynamic group of individuals who are passionate about
+                    what we do and dedicated to delivering the best results for our clients.</p>
+            </div>
+            <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+                <li>
+                    <div class="flex items-center gap-x-6">
+                        <img class="size-16 rounded-full outline-1 -outline-offset-1 outline-black/5"
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            alt="" />
+                        <div>
+                            <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Leslie Alexander</h3>
+                            <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-x-6">
+                        <img class="size-16 rounded-full outline-1 -outline-offset-1 outline-black/5"
+                            src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            alt="" />
+                        <div>
+                            <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Michael Foster</h3>
+                            <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / CTO</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-x-6">
+                        <img class="size-16 rounded-full outline-1 -outline-offset-1 outline-black/5"
+                            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            alt="" />
+                        <div>
+                            <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Dries Vincent</h3>
+                            <p class="text-sm/6 font-semibold text-indigo-600">Business Relations</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-x-6">
+                        <img class="size-16 rounded-full outline-1 -outline-offset-1 outline-black/5"
+                            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            alt="" />
+                        <div>
+                            <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Lindsay Walton</h3>
+                            <p class="text-sm/6 font-semibold text-indigo-600">Front-end Developer</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-x-6">
+                        <img class="size-16 rounded-full outline-1 -outline-offset-1 outline-black/5"
+                            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            alt="" />
+                        <div>
+                            <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Courtney Henry</h3>
+                            <p class="text-sm/6 font-semibold text-indigo-600">Designer</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-x-6">
+                        <img class="size-16 rounded-full outline-1 -outline-offset-1 outline-black/5"
+                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            alt="" />
+                        <div>
+                            <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Tom Cook</h3>
+                            <p class="text-sm/6 font-semibold text-indigo-600">Director of Product</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- satisfied customers -->
+    <div class="relative flex flex-col py-32 bg-gradient-to-r from-[#e3e3e4]/15 to-[#0ea5e9]/10">
+
+        <!-- sparkel -->
+        <div class="absolute mt-5 top-0/16 left-1/16 w-2 aspect-square rounded-full sparkle1"></div>
+        <div class="absolute hidden md:inline-block mt-3 top-0/16 md:left-15/16 w-2 aspect-square rounded-full sparkle"></div>
+        <div class="absolute top-1/16 left-11/16  w-2 aspect-square rounded-full sparkle1 z-0"></div>
+        <div class="absolute top-2/16 left-2/16 xl:left-3/16  w-2 aspect-square rounded-full sparkle z-0"></div>
+        <div class="absolute top-3/16 left-5/16 xl:left-8/16  w-2 aspect-square rounded-full sparkle z-0"></div>
+        <div class="absolute top-4/16 left-15/16 w-2 aspect-square rounded-full sparkle1 z-0"></div>
+        <div class="absolute top-5/16 left-1/16 xl:left-5/16 w-2 aspect-square rounded-full sparkle z-0"></div>
+        <div class="absolute top-8/16 left-10/16 w-2 aspect-square rounded-full sparkle1 z-0"></div>
+        <div class="absolute top-11/16 left-14/16 w-2 aspect-square rounded-full sparkle z-0"></div>
+        <div class="absolute top-12/16 left-2/16 w-2 aspect-square rounded-full sparkle z-0"></div>
+        <div class="absolute top-13/16 left-10/16 w-2 aspect-square rounded-full sparkle z-0"></div>
+        <div class="absolute top-14/16 left-1/16 w-2 aspect-square rounded-full sparkle z-0"></div>
+        <div class="absolute top-15/16 left-10/16 w-2 aspect-square rounded-full sparkle z-0"></div>
+
+        <!-- contents -->
+        <h2 class="inline-block mx-auto py-2 px-5 bg-[#0ea5e9]/10 text-[#1e3a8a] rounded-3xl font-normal font-poppins"> Customer Experiences</h2>
+        <strong class="text-4xl lg:text-5xl my-5 mx-auto text-shadow-sm text-white-50"><span class="gradient-text">Success </span><span class="gradient-text">Stories</span></strong>
+        <p class="text-center text-lg text-gray-600 mx-8 font-poppins">Join thousands of satisfied customers who've achieved their financial <br class="hidden md:block"> goals with Platinum Finance</p>
+        <div class="w-32 lg:w-40 h-1 bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] mx-auto rounded-2xl my-10 shadow-lg"></div>
+
+        <div class="relative mt-10">
+            <div class="absolute -top-20 -left-20 w-[10%] aspect-square rounded-full bg-gradient-to-tr from-[#1e3a8a] to-[#0ea5e9] opacity-10 -z-20"></div>
+            <div class="relative flex gap-8 max-w-7xl mx-auto px-5 overflow-x-auto no-scrollbar">
+                <div class="relative max-w-sm mx-auto shadow-xl shadow-violet-200 rounded-3xl border border-gray-200 px-6 mt-6 py-0 bounce min-w-xs xl:min-w-sm bg-[#0ea5e9]/5 z-10">
+                    <i class="absolute opacity-5 fa-solid fa-quote-left text-[7em] -top-5"></i>
+                    <!-- User Info -->
+                    <div class="flex items-center gap-4 mb-4 bg-transparent pt-6 px-3">
+                        <div class="w-15 aspect-square border-3 border-[#0ea5e9] flex items-center justify-center rounded-full font-semibold text-lg z-10"></div>
+                        <div>
+                            <h2 class="text-black font-bold text-lg">Rohit Mehra</h2>
+                            <span class="text-gray-500 text-base font-semibold font-poppins ">Roorkee</span>
+                            <!-- Star Rating -->
+                            <div class="flex items-center mb-3">
+                                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Content -->
+                    <p class="text-gray-600 text-lg font-medium leading-relaxed pb-6">
+                        "I was struggling to get a personal loan approved due to my past credit score issues.
+                        Platinum Finance not only guided me through credit improvement but also approved
+                        my loan within 48 hours. Thanks to them, I was able to fund my sister’s wedding
+                        without stress!"
+                    </p>
+
+                    <div class="flex items-center p-3 mb-6 mt-3">
+                        <img src="caroule2.png" alt="" class="w-8 aspect-square mr-5 bg-white shadow-sm">
+                        <span class="text-gray-500 font-medium ">Secured $1M funding</span>
+                    </div>
+                </div>
+                <div class="relative max-w-sm mx-auto shadow-xl shadow-violet-200 rounded-3xl border border-gray-200 px-6 mt-6 py-0 bounce1 min-w-xs xl:min-w-sm bg-[#0ea5e9]/5 z-10">
+                    <i class="absolute opacity-5 fa-solid fa-quote-left text-[7em] -top-5"></i>
+                    <!-- User Info -->
+                    <div class="flex items-center gap-4 mb-4 bg-transparent pt-6 px-3">
+                        <div class="w-15 aspect-square border-3 border-[#0ea5e9] flex items-center justify-center rounded-full font-semibold text-lg z-10"></div>
+                        <div>
+                            <h2 class="text-black font-bold text-lg">Anita Sharma</h2>
+                            <span class="text-gray-500 text-base font-semibold font-poppins ">Roorkee</span>
+                            <!-- Star Rating -->
+                            <div class="flex items-center mb-3">
+                                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Content -->
+                    <p class="text-gray-600 text-lg font-medium leading-relaxed pb-6">
+                        "Being a single mother, I needed a reliable car for daily commute and my son's school. Banks kept
+                        rejecting my application. Platinum Finance understood my situation and offered me a car loan with
+                        flexible EMIs. I now drive my own car—thank you so much!"
+                    </p>
+
+                    <div class="flex items-center p-3 mb-6 mt-3">
+                        <img src="https://images.unsplash.com/photo-1613243555978-636c48dc653c?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80" alt="" class="w-8 aspect-square mr-5 bg-white shadow-sm">
+                        <span class="text-gray-500 font-medium ">Secured $1M funding</span>
+                    </div>
+                </div>
+                <div class="relative max-w-sm mx-auto shadow-xl shadow-violet-200 rounded-3xl border border-gray-200 px-6 mt-6 py-0 bounce min-w-xs xl:min-w-sm bg-[#0ea5e9]/5 z-10">
+                    <i class="absolute opacity-5 fa-solid fa-quote-left text-[7em] -top-5"></i>
+                    <!-- User Info -->
+                    <div class="flex items-center gap-4 mb-4 bg-transparent pt-6 px-3">
+                        <div class="w-15 aspect-square border-3 border-[#0ea5e9] flex items-center justify-center rounded-full font-semibold text-lg z-10"></div>
+                        <div>
+                            <h2 class="text-black font-bold text-lg">Vikram Singh</h2>
+                            <span class="text-gray-500 text-base font-semibold font-poppins ">Patna</span>
+                            <!-- Star Rating -->
+                            <div class="flex items-center mb-3">
+                                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.566-.955L10 0l2.946 5.955 6.566.955-4.756 4.635 1.122 6.545z" />
+                                </svg>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Content -->
+                    <p class="text-gray-600 text-lg font-medium leading-relaxed pb-6">
+                        "My startup required quick funds to manage operational costs, and traditional banks were taking too
+                        long. Platinum Finance processed my business loan in record time. Their support helped me save my
+                        company from downtime."
+                    </p>
+
+                    <div class="flex items-center p-3 mb-6 mt-3">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80" alt="" class="w-8 aspect-square mr-5 bg-white shadow-sm">
+                        <span class="text-gray-500 font-medium ">Grow $500K funds for startup</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class=" relative text-center text-2xl text-shadow-sm mt-32 font-poppins">Clients Achievements</h2>
+        <div class="relative grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-5 mt-10 ">
+            <div class="relative bg-white rounded-2xl p-6 shadow-xl shadow-[0_35px_35px_rgba(59, 130, 246,1)] border border-gray-200 md:w-xs lg:w-2xs">
+                <div class="text-4xl text-center text-[#1e3a8a] text-shadow-xs font-bold">15K+</div>
+                <p class="text-gray-600 text-center font-medium">Happy Clients</p>
+                <div class="relative w-20 h-1 bg-[#3b82f6] opacity-50 rounded-2xl mt-3 mx-auto"></div>
+            </div>
+            <div class="relative bg-white rounded-2xl p-6 shadow-xl shadow-[0_35px_35px_rgba(59, 130, 246,1)] border border-gray-200 md:w-xs lg:w-2xs">
+                <div class="text-4xl text-center text-[#0ea5e9] text-shadow-xs font-bold">$2.5</div>
+                <p class="text-gray-600 text-center font-medium">Loan Processed</p>
+                <div class="relative w-20 h-1 bg-[#0ea5e9] opacity-50 rounded-2xl mt-3 mx-auto"></div>
+            </div>
+            <div class="relative bg-white rounded-2xl p-6 shadow-xl shadow-[0_35px_35px_rgba(59, 130, 246,1)] border border-gray-200 md:w-xs lg:w-2xs">
+                <div class="text-4xl text-center text-shadow-xs font-bold">98%</div>
+                <p class="text-gray-600 text-center font-medium">Satisfaction Rate</p>
+                <div class="relative w-20 h-1 bg-[#f59e0b] opacity-50 rounded-2xl mt-3 mx-auto"></div>
+            </div>
+            <div class="relative bg-white rounded-2xl p-6 shadow-xl shadow-[0_35px_35px_rgba(59, 130, 246,1)] border border-gray-200 md:w-xs lg:w-2xs">
+                <div class="text-4xl text-center text-shadow-xs text-[#10b981] font-bold">24/7</div>
+                <p class="text-gray-600 text-center font-medium">Support Available</p>
+                <div class="relative w-20 h-1 bg-[#10b981] opacity-50 rounded-2xl mt-3 mx-auto"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact us -->
+    <div class="px-4 sm:px-16 lg:px-36 overflow-hidden relative bg-white">
+        <h2 class="mt-26 mb-5 sm:mb-10 px-8 py-2 inline-block bg-[#0ea5e9]/10 text-[#1e3a8a] font-normal rounded-3xl text-shadow-xm">Contact us</h2>
+        <div class="lg:flex justify-between">
+            <!-- content -->
+            <div class="lg:w-[48%] lg:pr-10">
+                <h1 class="text-3xl sm:text-4xl gradient-text font-bold font-poppins mb-5">Get in Touch with Our Experts</h1>
+                <p class="text-xl text-gray-700 mb-8">Have questions about our services? Our financial advisors are ready to help you make the right decisions.</p>
+                <div class="w-32 h-1 bg-gradient-to-r from-[#3b82f6] to-[#0ea5e9] rounded-full mx-auto"></div>
+                <article class="relative mt-3">
+                    <div class="realtive flex content-center mb-5">
+                        <i class="fa-solid fa-location-dot p-4 bg-[#1e3a8a]/10 rounded-full h-1/2 aspect-square text-[#1e3a8a] text-xl"></i>
+                        <div class="ml-4">
+                            <h3 class="text-xl mb-1">Address</h3>
+                            <p class="text-gray-700 text-base text-shadow-3xs pr-10">Ambika Nagar, Motihari, East Champaran, Bihar 845401</p>
+                        </div>
+                    </div>
+                    <div class="realtive flex content-center mb-5">
+                        <i class="fa-solid fa-phone-flip p-3 bg-[#1e3a8a]/10 rounded-full h-1/2 text-[#1e3a8a] text-2xl"></i>
+                        <div class="ml-4">
+                            <h3 class="text-xl mb-1">Phone Number</h3>
+                            <p class="text-gray-700 text-base text-shadow-3xs">+91 22 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="realtive flex content-center mb-5">
+                        <i class="fa-solid fa-envelope p-3 bg-[#1e3a8a]/10 rounded-full h-1/2 text-[#1e3a8a] text-2xl"></i>
+                        <div class="ml-4">
+                            <h3 class="text-xl mb-1">Email Address</h3>
+                            <p class="text-gray-700 text-base text-shadow-3xs">support@platinumbfinance.in</p>
+                        </div>
+                    </div>
+                    <div class="realtive flex content-center mb-5">
+                        <i class="fa-solid fa-clock p-3 bg-[#1e3a8a]/10 rounded-full h-1/2 text-[#1e3a8a] text-2xl"></i>
+                        <div class="ml-4">
+                            <h3 class="text-xl mb-1">Working Hours</h3>
+                            <p class="text-gray-700 text-base text-shadow-3xs">Monday - Friday: 9AM to 6PM</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- form -->
+            <div class="mt-16 lg:mt-0 p-10 mb-32 bg-[#f8fafc] rounded-2xl lg:w-[48%]">
+                <form action="" class="">
+                    <div class="relative md:flex justify-between">
+                        <div class="mb-5 md:w-[48%]">
+                            <label for="full-name" class="block font-medium md:mb-1">Full Name</label>
+                            <input type="text" class="border-1 rounded-xl border-gray-300 mt-1 py-3 px-5 text-lg w-full font-medium text-gray-700" name="full-name" id="full-name" placeholder="Enter your name">
+                        </div>
+
+                        <div class="mb-5 md:w-[48%]">
+                            <label for="email" class="block font-medium md:mb-1">Email Address</label>
+                            <input type="email" class="border-1 rounded-xl border-gray-300 mt-1 py-3 px-5 text-lg w-full font-medium text-gray-700" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="relative md:flex justify-between"> 
+                        <div class="mb-5 md:w-[48%]">
+                            <label for="Phone-number" class="block font-medium md:mb-1">Phone Number</label>
+                            <input type="tel" class="border-1 rounded-2xl border-gray-300 mt-1 py-3 px-5 text-lg w-full font-medium text-gray-700" name="Phone-number" id="Phone-number" placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="mb-5 md:w-[48%]">
+                            <label for="services" class="block font-medium md:mb-1">Service Interested In</label>
+                            <select name="services" class="border-1 rounded-2xl border-gray-300 mt-1 py-3 px-5 text-lg w-full font-medium text-gray-700" id="services">
+                                <option value="No-service-selected" selected>Select a service</option>
+                                <option value="Presonal-loan">Presonal Loan</option>
+                                <option value="Home-loan">Home Loan</option>
+                                <option value="Credit-card">Credit Card</option>
+                                <option value="Motor-insurance">Motor Insurance</option>
+                                <option value="Health-insurance">Health Insurance</option>
+                                <option value="Life-insurance-policy"> Life Insurance Policy</option>
+                                <option value="Investment-planning">Investment Planning</option>
+                                <option value="Business-loan">Business Loan</option>
+                                <option value="Loans-against-property">Loans Against Property</option>
+                                <option value="Plot-against-loan">Plot Against Loan</option>
+                                <option value="Gold-loan">Gold Loan</option>
+                                <option value="Secured-business-loan">Secured Business Loan</option>
+                                <option value="Land-purchase-loan">Land Purchase Loan</option>
+                                <option value="cc">CC ( Cash Credit)</option>
+                                <option value="od">OD ( Over Draft )</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <label for="message" class="block font-medium md:mb-2">Message</label>
+                        <textarea name="message" class="border-1 rounded-2xl border-gray-300 mb-1 py-3 px-5 text-lg w-full font-medium text-gray-700" id="message" cols="50" rows="4" placeholder="How can we help you? "></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit Request" class="block w-full relative bg-[#1e3a8b] py-3 px-6 rounded-3xl font-medium text-white text-lg shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300 ease-in-out text-shadow-xs text-shadow-white-50">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
